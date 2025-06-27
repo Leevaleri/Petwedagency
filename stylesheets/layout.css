@@ -6,17 +6,9 @@
 
 body {
   line-height: 1.6;
-  background-color: #fff;
-  color: #333;
-  font-family: "Inter", sans-serif;
-}
-
-.container {
-  max-width: 1392px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -24,26 +16,31 @@ a {
   color: inherit;
 }
 
-ul {
-  list-style: none;
+/* менюшка */
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0;
 }
 
-img {
-  max-width: 100%;
+.logo-img {
+  width: 100%;
   height: auto;
   display: block;
 }
 
 .site-header {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.site-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navigation-group {
@@ -54,29 +51,34 @@ img {
 .main-nav ul {
   display: flex;
   align-items: center;
+  gap: 2vw;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav ul li {
-  margin-left: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.main-nav ul li:first-child {
-  margin-left: 0;
-}
-
-.main-nav ul li a {
-  font-size: 16px;
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 14vw;
+  min-height: 2vw;
+  border: 0.15vw solid black;
+  border-radius: 6vw;
+  font-family: "Uncage";
+  font-weight: 500;
+  font-size: 1.4vw;
   color: #000000;
-  text-transform: lowercase;
-  padding: 8px 0;
-  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+  padding: 0vw 2vw;
 }
 
-.main-nav ul li a:hover {
-  color: #555555;
-}
-
-.cart-link {
+/* .cart-link {
   margin-left: 30px;
   display: flex;
   align-items: center;
@@ -94,37 +96,6 @@ main {
 main h1 {
   text-align: center;
   margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  .site-header .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo {
-    margin-bottom: 15px;
-    font-weight: 700;
-    font-size: 49px;
-  }
-
-  .navigation-group {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .main-nav ul {
-    flex-wrap: wrap;
-  }
-
-  .main-nav ul li {
-    margin-left: 15px;
-    margin-bottom: 5px;
-  }
-
-  .cart-link {
-    margin-left: 15px;
-  }
 }
 
 .h1-n {
@@ -153,5 +124,1272 @@ main h1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 500px;
+} */
+
+/* экран один главная */
+
+.ekran1 {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 54.6vw;
+  margin-top: -4vw;
+}
+
+.tam {
+  width: 65vw;
+  height: 24.7vw;
+  background-image: url(../images/tam.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3vw 0vw 0vw 2vw;
+}
+.stol {
+  position: absolute;
+  width: 64vw;
+  height: 26.8vw;
+  background-image: url(../images/stol.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 27.5vw 0vw 0vw 1.5vw;
+}
+.kot {
+  position: absolute;
+  width: 31.2vw;
+  height: 49.2vw;
+  background-image: url(../images/kot.svg);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5.2vw 0vw 0vw 67.5vw;
+}
+.strelka {
+  position: absolute;
+  width: 31.2vw;
+  height: 4.2vw;
+  margin: 46.5vw 0vw 0vw 50vw;
+}
+
+.textik-glav {
+  position: absolute;
+  width: 27.9vw;
+  height: 11vw;
+  display: flex;
+  flex-direction: column;
+  margin: 37vw 0vw 0vw 51vw;
+}
+
+.textik-glav1 {
+  font-family: "Uncage";
+  font-size: 1.6vw;
+  font-weight: 500;
+}
+
+.textik-glav2 {
+  font-family: "Inter";
+  font-size: 1.4vw;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.textik-strelka {
+  font-family: "Uncage";
+  font-size: 1.6vw;
+  font-weight: 500;
+  margin-top: -3.7vw;
+  margin-left: 1.5vw;
+}
+
+/* экран два главная */
+
+.ekran2 {
+  position: relative;
+  width: 100vw;
+  height: 85vw;
+  margin: 4vw 0vw 0vw 2vw;
+}
+
+.uslugi {
+  width: 96.6vw;
+  height: 10vw;
+  border: 0.3vw #c2a8ff solid;
+  border-radius: 2.3vw;
+}
+
+.razdel {
+  font-family: "Uncage";
+  font-size: 6vw;
+  font-weight: 500;
+}
+
+.uslugi .razdel {
+  margin: 0.7vw 0vw 0vw 7.5vw;
+}
+
+.uslugi1 {
+  width: 96.6vw;
+  height: 23.4vw;
+  background-color: #ffc9e4;
+  border-radius: 2.3vw;
+  margin: 1.5vw 0vw 0vw 0vw;
+}
+
+.uslugi2 {
+  width: 96.6vw;
+  height: 23.4vw;
+  background-color: #d9d9d9;
+  border-radius: 2.3vw;
+  margin: 1.5vw 0vw 0vw 0vw;
+}
+
+.uslugi3 {
+  width: 96.6vw;
+  height: 23.4vw;
+  background-color: #ffc9e4;
+  border-radius: 2.3vw;
+  margin: 1.5vw 0vw 0vw 0vw;
+}
+
+.img-usl-1 {
+  width: 31.4vw;
+  height: 23.5vw;
+  background-image: url(../images/usl-1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2.3vw;
+}
+
+.img-usl-2 {
+  width: 31.4vw;
+  height: 23.5vw;
+  background-image: url(../images/usl-2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2.3vw;
+  margin-left: 65.2vw;
+}
+
+.img-usl-3 {
+  width: 31.4vw;
+  height: 23.5vw;
+  background-image: url(../images/usl-3.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2.3vw;
+}
+
+.razdel-mini {
+  font-family: "Uncage";
+  font-size: 2.6vw;
+  font-weight: 500;
+}
+
+.org {
+  margin: -16vw 0vw 0vw 46vw;
+}
+
+.podbor {
+  margin: -16vw 0vw 0vw 10vw;
+}
+
+.textik-usl1 {
+  font-family: "Inter";
+  font-size: 1.7vw;
+  font-weight: 400;
+  line-height: 120%;
+  color: #585858;
+  margin: 0vw 0vw 0vw 46vw;
+}
+
+.textik-usl2 {
+  font-family: "Inter";
+  font-size: 1.7vw;
+  font-weight: 400;
+  line-height: 120%;
+  color: #585858;
+  margin: 0vw 0vw 0vw 10vw;
+}
+
+/* экран третий главная */
+
+.ekran3 {
+  position: relative;
+  width: 100vw;
+  height: 41vw;
+  overflow: hidden;
+}
+
+.karta {
+  position: absolute;
+  width: 48vw;
+  height: 31.2vw;
+  background-image: url(../images/karta.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2.3vw;
+  margin: 6vw 0vw 0vw 2vw;
+}
+
+.textik-karta {
+  position: absolute;
+  width: 29vw;
+  height: 38vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1vw;
+  margin: 6vw 0vw 0vw 64vw;
+  font-family: "Inter";
+}
+
+.textik-karta-razdel {
+  font-weight: 500;
+  font-size: 1.7vw;
+}
+
+.textik-karta-text {
+  font-weight: 400;
+  font-size: 1.5vw;
+  margin-top: -1vw;
+}
+
+/* подвал */
+
+.podval {
+  position: relative;
+  width: 100vw;
+  height: 14vw;
+  overflow: hidden;
+  background-color: #c2a8ff;
+  margin-top: 3vw;
+}
+
+.mini-logo {
+  position: absolute;
+  width: 12vw;
+  height: 12vw;
+  background-image: url(../images/mini-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.2vw 0vw 0vw 2vw;
+}
+
+.fio {
+  position: absolute;
+  font-family: "Uncage";
+  font-size: 1.5vw;
+  line-height: 120%;
+  text-align: right;
+  font-weight: 500;
+  color: #f2f2f2;
+  margin: 4.5vw 0vw 0vw 87vw;
+}
+
+.kurs {
+  position: absolute;
+  font-family: "Inter";
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #ffc9e4;
+  margin: 10vw 0vw 0vw 82vw;
+}
+
+.stranitsi {
+  position: absolute;
+  width: 22vw;
+  height: 24vw;
+  display: flex;
+  gap: 0.5vw;
+  flex-direction: column;
+  font-family: "Uncage";
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #f2f2f2;
+  align-items: center;
+  text-align: center;
+  margin: 1.2vw 0vw 0vw 39vw;
+}
+
+/* о нас */
+
+/* экран один о нас */
+
+.ekran-about1 {
+  position: relative;
+  width: 100vw;
+  height: 47.8vw;
+  overflow: hidden;
+}
+
+.ekran-about1 .razdel {
+  margin: 0vw 0vw 0vw 2vw;
+}
+
+.pod-razdel {
+  font-family: "Inter";
+  font-size: 2.6vw;
+  font-weight: 500;
+  color: #585858;
+}
+
+.ekran-about1 .pod-razdel {
+  margin: -2.5vw 0vw 0vw 2vw;
+}
+
+.pink-block {
+  width: 96.7vw;
+  height: 25.1vw;
+  background-color: #ffc9e4;
+  border-radius: 2.3vw;
+  margin: 11.3vw 0vw 0vw 2vw;
+}
+
+.b-kot {
+  position: absolute;
+  width: 48.1vw;
+  height: 51.2vw;
+  background-image: url(../images/b-kot.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -51vw 0vw 0vw 26.5vw;
+}
+
+.mini-logo2 {
+  position: absolute;
+  width: 14.1vw;
+  height: 14.1vw;
+  background-image: url(../images/mini-logo2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -31.5vw 0vw 0vw 78vw;
+}
+
+/* экран два о нас */
+
+.ekran-about2 {
+  position: relative;
+  width: 100vw;
+  height: 38vw;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+
+.about-pink-block2 {
+  position: absolute;
+  width: 47.8vw;
+  height: 37.5vw;
+  background-image: url(../images/about-pink-block.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 0vw 0vw 2vw;
+}
+
+.pod-razdel2 {
+  font-family: "Uncage";
+  font-size: 2.9vw;
+  font-weight: 500;
+  color: #585858;
+  margin: 1vw 0vw 0vw 1.5vw;
+}
+
+.about-textik1 {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 400;
+  color: #585858;
+  margin: 18vw 0vw 0vw 2vw;
+}
+
+.about-grey-block {
+  position: absolute;
+  width: 64.1vw;
+  height: 37.5vw;
+  background-image: url(../images/about-grey-block.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 0vw 0vw 35vw;
+}
+
+.about-textik2 {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 400;
+  color: #585858;
+  margin: 18vw 0vw 0vw 20vw;
+}
+
+.znak1 {
+  position: absolute;
+  width: 14.9vw;
+  height: 14.9vw;
+  background-image: url(../images/znak1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -34vw 0vw 0vw 5vw;
+}
+
+.znak2 {
+  position: absolute;
+  width: 14.9vw;
+  height: 14.9vw;
+  background-image: url(../images/znak2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -34vw 0vw 0vw 24.5vw;
+}
+
+.znak3 {
+  position: absolute;
+  width: 14.9vw;
+  height: 14.9vw;
+  background-image: url(../images/znak3.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -34vw 0vw 0vw 44vw;
+}
+
+/* экран три о нас */
+
+.ekran-about3 {
+  position: relative;
+  width: 100vw;
+  height: 18.5vw;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+
+.info-block1 {
+  position: absolute;
+  width: 47.8vw;
+  height: 17.6vw;
+  border: 0.4vw solid #c5c5c5;
+  border-radius: 2.3vw;
+  margin: 0vw 0vw 0vw 2vw;
+}
+
+.info-textik1 {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 400;
+  color: #000000;
+  margin: 2vw 0vw 0vw 2vw;
+}
+
+.info-block2 {
+  position: absolute;
+  width: 47.8vw;
+  height: 17.6vw;
+  background-color: #c4aaff;
+  border-radius: 2.3vw;
+  margin: 0vw 0vw 0vw 51.2vw;
+}
+
+.pod-razdel3 {
+  font-family: "Uncage";
+  font-size: 2.9vw;
+  font-weight: 500;
+  color: #f2f2f2;
+}
+
+.info-block2 .pod-razdel3 {
+  margin: 1vw 0vw 0vw 2vw;
+}
+
+.info-cursive {
+  font-family: "KBChopinScript";
+  font-size: 3.2vw;
+  font-weight: 400;
+  color: #f2f2f2;
+}
+
+.info-block2 .info-cursive {
+  margin: 6.5vw 0vw 0vw 2.5vw;
+}
+
+.strelka-about {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  background-image: url(../images/about-strelka.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-block2 .strelka-about {
+  margin: -16.5vw 0vw 0vw 43vw;
+}
+
+/* портфолио  */
+
+/* экран один портфолио */
+
+.ekran-portf1 {
+  position: relative;
+  width: 100vw;
+  height: 79vw;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+
+.ekran-portf1 .razdel {
+  position: absolute;
+  margin: 7.8vw 0vw 0vw 2vw;
+}
+
+.textik-portf1 {
+  position: absolute;
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 400;
+  color: #000000;
+  margin: 38vw 0vw 0vw 19vw;
+}
+
+.purple-block-portf {
+  position: absolute;
+  width: 47.8vw;
+  height: 48.4vw;
+  background-image: url(../images/purple-block-portf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 0vw 0vw 2vw;
+}
+
+.main-portf {
+  position: absolute;
+  width: 50.7vw;
+  height: 52.3vw;
+  background-image: url(../images/main-portf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -4.2vw 0vw 0vw 51vw;
+}
+
+.stol-portf {
+  position: absolute;
+  width: 96.7vw;
+  height: 28.5vw;
+  background-image: url(../images/stol-portf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50vw 0vw 0vw 2vw;
+}
+
+.stol-portf-black {
+  position: absolute;
+  width: 96.7vw;
+  height: 28.5vw;
+  background-color: #050605;
+  border-radius: 2.3vw;
+  opacity: 0;
+  z-index: 105;
+}
+
+.stol-text {
+  position: absolute;
+  font-family: "Inter";
+  font-size: 2.8vw;
+  font-weight: 400;
+  color: #f2f2f2;
+  margin: 23.5vw 0vw 0vw 2vw;
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* экран два портфолио */
+
+.ekran-portf2 {
+  position: relative;
+  width: 100vw;
+  height: 81vw;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+
+.butilki {
+  position: absolute;
+  width: 31.2vw;
+  height: 28.5vw;
+  background-image: url(../images/butilki-portf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 0vw 0vw 2vw;
+}
+
+.butilki-black {
+  position: absolute;
+  width: 31.2vw;
+  height: 28.5vw;
+  background-color: #050605;
+  border-radius: 2.3vw;
+  opacity: 0;
+  z-index: 105;
+}
+
+.butilki-text {
+  position: absolute;
+  font-family: "Inter";
+  font-size: 2.8vw;
+  font-weight: 400;
+  color: #f2f2f2;
+  line-height: 85%;
+  margin: 22vw 0vw 0vw 2vw;
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.krik {
+  position: absolute;
+  width: 31.2vw;
+  height: 19.7vw;
+  border-radius: 2.3vw;
+  background-image: url(../images/krik-portf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 0vw 0vw 34.5vw;
+}
+
+.krik-black {
+  position: absolute;
+  width: 31.2vw;
+  height: 19.7vw;
+  background-color: #050605;
+  border-radius: 2.3vw;
+  opacity: 0;
+  z-index: 105;
+}
+
+.krik-text {
+  position: absolute;
+  font-family: "Inter";
+  font-size: 2.8vw;
+  font-weight: 400;
+  color: #f2f2f2;
+  line-height: 85%;
+  margin: 13vw 0vw 0vw 2vw;
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.dogs {
+  position: absolute;
+  width: 31.2vw;
+  height: 30.4vw;
+  background-image: url(../images/dogs-portf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 0vw 0vw 67vw;
+}
+
+.dogs-black {
+  position: absolute;
+  width: 31.2vw;
+  height: 30.4vw;
+  background-color: #050605;
+  border-radius: 2.3vw;
+  opacity: 0;
+  z-index: 105;
+}
+
+.dogs-text {
+  position: absolute;
+  font-family: "Inter";
+  font-size: 2.8vw;
+  font-weight: 400;
+  color: #f2f2f2;
+  line-height: 85%;
+  margin: 21.5vw 0vw 0vw 2vw;
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.big-portf {
+  position: absolute;
+  width: 95.1vw;
+  height: 51.4vw;
+  background-image: url(../images/big-portf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30vw 0vw 0vw 2vw;
+}
+
+.big-portf-black {
+  position: absolute;
+  width: 95.1vw;
+  height: 51.4vw;
+  background-image: url(../images/big-black-portf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  z-index: 105;
+}
+
+.big-portf-text {
+  position: absolute;
+  font-family: "Inter";
+  font-size: 2.8vw;
+  font-weight: 400;
+  color: #f2f2f2;
+  line-height: 85%;
+  margin: 2vw 0vw 0vw 2vw;
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.lapka {
+  position: absolute;
+  width: 25.1vw;
+  height: 20.4vw;
+  background-image: url(../images/lapka-portf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 23.5vw 0vw 0vw 37.5vw;
+}
+
+.textik-portf2 {
+  position: absolute;
+  width: 30.4vw;
+  height: 12.1vw;
+  margin: 32.5vw 0vw 0vw 67vw;
+}
+
+.pod-pod-razdel {
+  font-family: "Uncage";
+  font-size: 2.6vw;
+  font-weight: 500;
+  line-height: 120%;
+  color: #000000;
+}
+
+.portf-text {
+  font-family: "Inter";
+  font-size: 1.7vw;
+  font-weight: 400;
+  color: #c5c5c5;
+  line-height: 120%;
+}
+
+/* экран три порфтолио */
+
+.ekran-portf3 {
+  position: relative;
+  width: 100vw;
+  height: 17.9vw;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+
+.info-block3 {
+  position: absolute;
+  width: 47vw;
+  height: 17.6vw;
+  background-color: #c4aaff;
+  border-radius: 2.3vw;
+  margin: 0vw 0vw 0vw 2vw;
+}
+
+.info-block3 .pod-razdel3 {
+  margin: 1vw 0vw 0vw 2vw;
+}
+
+.info-block3 .info-cursive {
+  margin: 6.5vw 0vw 0vw 2.5vw;
+}
+
+.info-block4 {
+  position: absolute;
+  width: 47vw;
+  height: 17.6vw;
+  background-color: #c5c5c5;
+  border-radius: 2.3vw;
+  margin: 0vw 0vw 0vw 50.5vw;
+}
+
+.info-block4 .pod-razdel3 {
+  margin: 1vw 0vw 0vw 2vw;
+}
+
+.info-block4 .info-cursive {
+  margin: 6.5vw 0vw 0vw 2.5vw;
+}
+
+.info-block3 .strelka-about {
+  margin: -16.5vw 0vw 0vw 42vw;
+}
+
+.strelka-portf {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  background-image: url(../images/strelka-portf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-block4 .strelka-portf {
+  margin: -16.5vw 0vw 0vw 42vw;
+}
+
+/* блог */
+
+/* экран один блог */
+
+.ekran-blog1 {
+  position: relative;
+  width: 100vw;
+  height: 30.6vw;
+  overflow: hidden;
+}
+
+.ekran-blog1 .razdel {
+  margin: 0vw 0vw 0vw 2vw;
+}
+
+.ekran-blog1 .pod-razdel {
+  margin: -2.5vw 0vw 0vw 2vw;
+}
+
+.main-blog {
+  position: absolute;
+  width: 97.1vw;
+  height: 43.7vw;
+  background-image: url(../images/blog-main.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -11vw 0vw 0vw 1.5vw;
+}
+
+/* экран два блог */
+
+.ekran-blog2 {
+  position: relative;
+  width: 100vw;
+  height: 61.6vw;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+
+.post1 {
+  position: absolute;
+  width: 47.4vw;
+  height: 29.15vw;
+  background-image: url(../images/pink-block-blog.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 0vw 0vw 2vw;
+}
+
+.blog-14 {
+  position: absolute;
+  width: 17.5vw;
+  height: 23.6vw;
+  background-image: url(../images/14-blog.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2.5vw 0vw 0vw 2.5vw;
+}
+
+.chitat1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.3vw;
+  height: 11.2vw;
+  border-radius: 2.3vw;
+  background-color: #ffc9e4;
+  margin: 7.5vw 0vw 0vw 23vw;
+}
+
+.chitat-text {
+  font-family: "Uncage";
+  font-size: 3.9vw;
+  font-weight: 500;
+  color: #f2f2f2;
+}
+
+.post2 {
+  position: absolute;
+  width: 47.4vw;
+  height: 29.15vw;
+  background-image: url(../images/pink-block-blog.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0vw 0vw 0vw 51vw;
+}
+
+.tsveti-blog {
+  position: absolute;
+  width: 17.5vw;
+  height: 23.6vw;
+  background-image: url(../images/tsveti-blog.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2.5vw 0vw 0vw 2.5vw;
+}
+
+.chitat2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.3vw;
+  height: 11.2vw;
+  border-radius: 2.3vw;
+  background-color: #ffc9e4;
+  margin: 7.5vw 0vw 0vw 23vw;
+}
+
+.post3 {
+  position: absolute;
+  width: 47.4vw;
+  height: 29.15vw;
+  background-image: url(../images/pink-block-blog.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 31vw 0vw 0vw 2vw;
+}
+
+.white-kot-blog {
+  position: absolute;
+  width: 17.5vw;
+  height: 23.6vw;
+  background-image: url(../images/white-kot-blog.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2.5vw 0vw 0vw 2.5vw;
+}
+
+.chitat3 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.3vw;
+  height: 11.2vw;
+  border-radius: 2.3vw;
+  background-color: #ffc9e4;
+  margin: 10vw 0vw 0vw 23vw;
+}
+
+.post4 {
+  position: absolute;
+  width: 47.4vw;
+  height: 29.15vw;
+  border: 0.2vw solid #c5c5c5;
+  border-radius: 2.3vw;
+  margin: 31vw 0vw 0vw 52vw;
+}
+
+.pustoi {
+  position: absolute;
+  width: 17.5vw;
+  height: 23.6vw;
+  border-radius: 2.3vw;
+  background-color: #c5c5c5;
+  margin: 2.5vw 0vw 0vw 2.5vw;
+}
+
+.textik-blog {
+  font-family: "Inter";
+  font-size: 2.15vw;
+  font-weight: 500;
+  color: #000000;
+  line-height: 120%;
+  margin: 2.5vw 0vw 0vw 23vw;
+}
+
+/* экран три блог */
+
+.ekran-blog3 {
+  position: relative;
+  width: 100vw;
+  height: 17.9vw;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+
+.info-block5 {
+  position: absolute;
+  width: 47vw;
+  height: 17.6vw;
+  background-color: #c5c5c5;
+  border-radius: 2.3vw;
+  margin: 0vw 0vw 0vw 50.5vw;
+}
+
+.info-block5 .pod-razdel3 {
+  margin: 1vw 0vw 0vw 2vw;
+}
+
+.info-block5 .info-cursive {
+  margin: 6.5vw 0vw 0vw 2.5vw;
+}
+
+.info-block5 .strelka-portf {
+  margin: -16.5vw 0vw 0vw 42vw;
+}
+
+.zag {
+  font-family: "Uncage";
+  font-size: 5vw;
+  font-weight: 500;
+  color: #000000;
+  line-height: 120%;
+  margin: 5vw 0vw 0vw 3vw;
+}
+
+.arg1 {
+  background-image: url(../images/fn.svg);
+  width: 100vw;
+  height: 19vw;
+}
+
+.vved {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: #000000;
+  line-height: 120%;
+  margin: 5vw 0vw 0vw 4vw;
+  height: 10vw;
+  width: 45vw;
+  position: absolute;
+}
+
+.arg2 {
+  background-image: url(../images/fn2.svg);
+  width: 100vw;
+  height: 36vw;
+}
+
+.bez {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: #000000;
+  line-height: 120%;
+  margin: 9vw 0vw 0vw 36vw;
+  height: 10vw;
+  width: 60vw;
+  position: absolute;
+}
+
+.har {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: #000000;
+  line-height: 120%;
+  margin: 26.5vw 0vw 0vw 36vw;
+  height: 10vw;
+  width: 60vw;
+  position: absolute;
+}
+
+.arg3 {
+  background-image: url(../images/arg3.svg);
+  width: 100vw;
+  height: 36vw;
+}
+
+.cv {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: #000000;
+  line-height: 120%;
+  margin: 9.5vw 0vw 0vw 3vw;
+  height: 10vw;
+  width: 60vw;
+  position: absolute;
+}
+
+.acs {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: #000000;
+  line-height: 120%;
+  margin: 26vw 0vw 0vw 3vw;
+  height: 10vw;
+  width: 58vw;
+  position: absolute;
+}
+
+.gl1 {
+  font-family: "Uncage";
+  font-size: 5vw;
+  font-weight: 500;
+  color: #000000;
+  line-height: 120%;
+  margin: 5vw 48vw 0vw 3vw;
+  position: absolute;
+}
+
+.pr1 {
+  background-image: url(../images/pr1.svg);
+  width: 100vw;
+  height: 48vw;
+}
+
+.t1 {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: #000000;
+  line-height: 120%;
+  margin: 38vw 0vw 0vw 2vw;
+  height: 10vw;
+  width: 47vw;
+  position: absolute;
+}
+
+.pr2 {
+  background-image: url(../images/pr2.svg);
+  width: 100vw;
+  height: 48vw;
+}
+
+.gl2 {
+  font-family: "Uncage";
+  font-size: 5vw;
+  font-weight: 500;
+  color: #000000;
+  line-height: 120%;
+  margin: 3vw 48vw 0vw 51vw;
+  position: absolute;
+}
+
+.t2 {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: #000000;
+  line-height: 120%;
+  margin: 33vw 0vw 0vw 51vw;
+  height: 10vw;
+  width: 43vw;
+  position: absolute;
+}
+
+.pr3 {
+  background-image: url(../images/pr3.svg);
+  width: 100vw;
+  height: 48vw;
+}
+
+.gl3 {
+  font-family: "Uncage";
+  font-size: 5vw;
+  font-weight: 500;
+  color: #000000;
+  line-height: 120%;
+  margin: 3vw 48vw 0vw 3vw;
+  position: absolute;
+}
+
+.t3 {
+  font-family: "Inter";
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: #000000;
+  line-height: 120%;
+  margin: 34vw 0vw 0vw 3vw;
+  height: 10vw;
+  width: 43vw;
+  position: absolute;
+}
+
+.vrh {
+  width: 100vw;
+  height: 23vw;
+}
+
+.tov1 {
+  width: 50vw;
+  height: 23vw;
+  margin: 2vw 0vw 0vw 3vw;
+}
+
+.tov2 {
+  width: 40vw;
+  height: 23vw;
+  margin: -23vw 0vw 0vw 51vw;
+  position: absolute;
+}
+
+.tov3 {
+  width: 50vw;
+  height: 23vw;
+  margin: 3vw 0vw 0vw 3vw;
+}
+
+.tov4 {
+  width: 40vw;
+  height: 23vw;
+  margin: -23vw 0vw 0vw 51vw;
+  position: absolute;
+}
+
+.tov5 {
+  width: 50vw;
+  height: 23vw;
+  margin: 3vw 0vw 0vw 3vw;
+}
+
+.tov6 {
+  width: 45vw;
+  height: 23vw;
+  margin: -23vw 0vw 0vw 51vw;
+  position: absolute;
+}
+
+.tov7 {
+  width: 50vw;
+  height: 23vw;
+  margin: 3vw 0vw 0vw 3vw;
+}
+
+.skoro {
+  width: 30vw;
+  height: 23vw;
+  margin: -23vw 0vw 0vw 67vw;
+  position: absolute;
 }

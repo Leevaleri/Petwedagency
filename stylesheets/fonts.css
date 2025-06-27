@@ -1,5 +1,24 @@
 @font-face {
-  font-family: 'Helvetica';
-  src: url('../Helvetica.ttc') format('opentype');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
 }
-
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Uncage';
+  src: url('../fonts/uncage-medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'KBChopinScript';
+  src: url('../fonts/kbchopinscript.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}

@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 49px;
+  }
+
+  .navigation-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .main-nav ul li {
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+
+  .cart-link {
+    margin-left: 15px;
+  }
+}

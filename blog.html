@@ -6,27 +6,122 @@
     <title>blog</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <meta name="description" content="" />
+    <script src="javascript/app.js"></script>
+    <link rel="icon" type="images/png" href="images/icon.png" />
   </head>
 
   <body>
+    <!-- менюшка -->
     <header class="site-header">
       <div class="container">
         <div class="logo">
-          <a href="index.html"> <img src="./images/petwed.svg" alt="" /> </a>
+          <a href="index.html">
+            <img class="logo-img" src="./images/petwed.svg" alt="" />
+          </a>
         </div>
         <div class="navigation-group">
           <nav class="main-nav">
             <ul>
-              <li><a href="about.html">о нас</a></li>
-              <li><a href="portfolio.html">портфолио</a></li>
-              <li><a style="font-weight: 600" href="blog.html">блог</a></li>
-              <li><a href="shop.html">мерч</a></li>
+              <li>
+                <a class="nav-link" href="about.html">о нас</a>
+              </li>
+              <li>
+                <a class="nav-link" href="portfolio.html">портфолио</a>
+              </li>
+              <li>
+                <a class="nav-link" href="blog.html">блог</a>
+              </li>
+              <li>
+                <a class="nav-link" href="shop.html">мерч</a>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
 
-    <script src="javascript/app.js"></script>
+    <!-- экран один блог -->
+
+    <div class="ekran-blog1">
+      <p class="razdel">блог</p>
+      <p class="pod-razdel">о свадьбах и не только</p>
+      <div class="main-blog"></div>
+    </div>
+
+    <!-- экран два блог -->
+
+    <div class="ekran-blog2">
+      <div class="post1">
+        <div class="blog-14"></div>
+        <p class="textik-blog">
+          14 февраля <br />
+          в городе домашних животных
+        </p>
+        <a href="https://leevaleri.github.io/loved/" class="chitat1">
+          <p class="chitat-text">ЧИТАТЬ</p>
+        </a>
+      </div>
+      <div class="post2">
+        <div class="tsveti-blog"></div>
+        <p class="textik-blog">
+          как правильно <br />подобрать цветы <br />
+          на свадьбу
+        </p>
+        <a href="article.html" class="chitat2">
+          <p class="chitat-text">ЧИТАТЬ</p>
+        </a>
+      </div>
+      <div class="post3">
+        <div class="white-kot-blog"></div>
+        <p class="textik-blog">
+          мероприятия <br />
+          для наших клиентов
+        </p>
+        <a href="events.html" class="chitat3">
+          <p class="chitat-text">ЧИТАТЬ</p>
+        </a>
+      </div>
+      <div class="post4">
+        <div class="pustoi"></div>
+        <p class="textik-blog">
+          совсем скоро <br />
+          здесь появятся <br />новые статьи
+        </p>
+      </div>
+    </div>
+
+    <!-- экран три блог -->
+    <div class="ekran-blog3">
+      <a href="shop.html" class="info-block3">
+        <p class="pod-razdel3">мерч</p>
+        <p class="info-cursive">для самых близких</p>
+        <div class="strelka-about"></div>
+      </a>
+
+      <a href="index.html#contacts" class="info-block5">
+        <p class="pod-razdel3">контакты</p>
+        <p class="info-cursive">свяжитесь с нами</p>
+        <div class="strelka-portf"></div>
+      </a>
+    </div>
+    <!-- подвал -->
+    <div class="podval">
+      <div class="mini-logo"></div>
+      <div class="fio">
+        <p>Балала<br />Валерия<br />Алексеевна</p>
+      </div>
+      <div class="kurs">
+        <p>1 курс УКИ НИУ ВШЭ</p>
+      </div>
+      <div class="stranitsi">
+        <ul>
+          <li><a href="index.html">главная</a></li>
+          <li><a href="about.html">о нас</a></li>
+          <li><a href="blog.html">блог</a></li>
+          <li><a href="shop.html">мерч</a></li>
+          <li><a href="portfolio.html">портфолио</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

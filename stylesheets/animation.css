@@ -1,0 +1,91 @@
+.nav-link:hover {
+  color: #ffc9e4;
+}
+
+.stranitsi a:hover {
+  color: #ffc9e4;
+}
+
+.info-block2:hover {
+  background-color: #c5c5c5;
+}
+
+/* портфолио картинки */
+
+.stol-portf-black,
+.butilki-black,
+.krik-black,
+.dogs-black,
+.big-portf-black {
+  transition: opacity 0.3s;
+}
+
+.stol-text,
+.butilki-text,
+.krik-text,
+.dogs-text,
+.big-portf-text {
+  transition: opacity 0.3s;
+}
+
+.stol-portf:hover .stol-portf-black {
+  opacity: 0.45;
+}
+
+.stol-portf:hover .stol-text {
+  opacity: 1;
+}
+
+.butilki:hover .butilki-black {
+  opacity: 0.45;
+}
+
+.butilki:hover .butilki-text {
+  opacity: 1;
+}
+
+.krik:hover .krik-black {
+  opacity: 0.45;
+}
+
+.krik:hover .krik-text {
+  opacity: 1;
+}
+
+.dogs:hover .dogs-black {
+  opacity: 0.45;
+}
+
+.dogs:hover .dogs-text {
+  opacity: 1;
+}
+
+.big-portf:hover .big-portf-black {
+  opacity: 0.45;
+}
+
+.big-portf:hover .big-portf-text {
+  opacity: 1;
+}
+
+.info-block3:hover {
+  background-color: #ffc9e4;
+}
+
+.info-block4:hover {
+  background-color: #ffc9e4;
+}
+
+.info-block5:hover {
+  background-color: #ffc9e4;
+}
+
+.chitat1:hover {
+  background-color: #c2a8ff;
+}
+.chitat2:hover {
+  background-color: #c2a8ff;
+}
+.chitat3:hover {
+  background-color: #c2a8ff;
+}
